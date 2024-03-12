@@ -26,6 +26,9 @@ body,h2,button,p{
     color: #000;
     margin: 20px 0;
 }
+.person p{
+    color: #000;
+}
 .person .progress{
     height: 30px;
     background-color: #888;
