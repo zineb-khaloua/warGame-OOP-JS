@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #f6f6f6;
+}
+body,h2,button,p{
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+}
+.box{
+    display: flex;
+   justify-content: space-around;
+}
+.person{
+    width: 45%;
+    border: 1px solid #000;
+    text-align: center;
+    margin: 5px;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.person h2{
+    color: #000;
+    margin: 20px 0;
+}
+.person .progress{
+    height: 30px;
+    background-color: #888;
+
+}
+.person #naruto-percentage{
+    margin-left: 80%;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+.person #sasaki-percentage{
+    margin-left: 80%;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.person .progress span{
+   display: block;
+   width: 100%;
+   height: 100%;
+   background-color: green;
+
+}  
+.person img{
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    display:  block;
+
+}
+button{
+    background-color: #000;
+    color: #ffff;
+    margin: 10px 0;
+    padding: 10px;
+    width: 150px;
+    border: 0;
+
+}
