@@ -7,13 +7,14 @@ function Character(name, strenght ,health){
     
 }
 
-function elementsUI(name){//solid principal =>every function has a role
+function elementsUI(name){
     this.attackBtn=document.querySelector(`#${name}-attack`);
     this.healthBtn=document.querySelector(`#${name}-make-health`);
     this.progress=document.querySelector(`.${name}-health span`);
     this.alive=document.querySelector(`#${name}-alive`);
     this.percentage=document.querySelector( `#${name}-percentage`);
 }
+//attack function 
 Character.prototype.attack=function(competitor){
     if(competitor.health>0){
       competitor.health -= this.strenght ;
@@ -27,12 +28,13 @@ Character.prototype.attack=function(competitor){
     }
 
 }
-Character.prototype.status=function (){
+/*Character.prototype.status=function (){
     console.log(`name:${this.name}`);
     console.log(`strenght:${this.strenght}`);
     console.log(`health:${this.health}`);
-}
+}*/
 
+//makeHealth function
 Character.prototype.makeHealth=function(){
     if(this.health<100)
     {
